@@ -9,20 +9,40 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <!--<form action="http://httpbin.org/post" method="post"> </form>-->     
+        <!--<form action="http://httpbin.org/post" method="post"></form>-->
             <div>
-                <label for="userName">Username:</label>
-                <input type="text" id="user" name="username">
+                <label for="userName">Username:</label> <!-- name="username" is the key, inputted name is the value-->
+                <input type="text" id="user" name="username" placeholder="ex: haskmoney">
             </div>
 
             <div>
-                <label for="passWord">Password:</label>
-                <input type="password" id="password" name="pass">
+                <label for="passWord">Password:</label> <!-- name="pass" is the key, inputted password is the value-->
+                <input type="password" id="password" name="pass" placeholder="ex: 123">
             </div>
 
             <div>
-                <label for="userAge">Age:</label>
-                <input type="number" id="age" name="age">
+                <label for="userAge">Age:</label> <!-- name="age" is the key, inputted age is the value-->
+                <input type="number" id="age" name="age" placeholder="ex: 69">
+            </div>
+
+            <div>
+                <label for="user_email">Email address:</label> <!-- name="email" is the key, inputted email is the value-->
+                <input type="email" id="email" name="email" placeholder="ex: haskmoney@gmail.com">
+            </div>
+
+            <div>
+                <label for="dob">Date of birth:</label> <!-- name="dob" is the key, inputted date of birth is the value-->
+                <input type="date" id="date" name="dob">
+            </div>
+
+            <select name="Plan" id="plan">
+                <option value="free">Free --- $0 a month</option>
+                <option value="basic">Basic --- $9 a month</option>
+                <option value="premium">Premium --- $54 a month</option>
+            </select>
+
+            <div>
+                <textarea rows="20" cols="120">Dear haskmoney, </textarea>
             </div>
 
             <button type="submit" id="submit-btn">Submit</button>
@@ -31,8 +51,9 @@
                 <h1 id="name-output"></h1>
                 <h1 id="pass-output"></h1>
                 <h1 id="age-output"></h1>
+                <h1 id="email-output"></h1>
             </div>
-
+         
         <script src="password.js" async defer></script>
     </body>
 </html>

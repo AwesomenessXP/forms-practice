@@ -1,5 +1,19 @@
 .container-1 {
     position: relative;
-    height: 500px;
+    height: 250px;
     width: auto;
+    margin: 10px 0;
+}
+
+input {
+    width: 200px;
+    padding: 9px 9px; /* top/bottom, left/right*/
+    margin: 10px 10px; /*top/bottom, left/right*/
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+#plan {
+    margin: 10px 0;
 }
