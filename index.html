@@ -10,36 +10,51 @@
     </head>
     <body>
         <!--<form action="http://httpbin.org/post" method="post"></form>-->
-            <div>
+
+            <!-- REMEMBER: USE <fieldset> to group forms together -->
+            <fieldset>
+                <legend>Sign in</legend>
                 <label for="userName">Username:</label> <!-- name="username" is the key, inputted name is the value-->
                 <input type="text" id="user" name="username" placeholder="ex: haskmoney">
-            </div>
 
-            <div>
                 <label for="passWord">Password:</label> <!-- name="pass" is the key, inputted password is the value-->
                 <input type="password" id="password" name="pass" placeholder="ex: 123">
-            </div>
-
-            <div>
+            
                 <label for="userAge">Age:</label> <!-- name="age" is the key, inputted age is the value-->
                 <input type="number" id="age" name="age" placeholder="ex: 69">
-            </div>
 
-            <div>
                 <label for="user_email">Email address:</label> <!-- name="email" is the key, inputted email is the value-->
                 <input type="email" id="email" name="email" placeholder="ex: haskmoney@gmail.com">
-            </div>
 
-            <div>
                 <label for="dob">Date of birth:</label> <!-- name="dob" is the key, inputted date of birth is the value-->
                 <input type="date" id="date" name="dob">
-            </div>
+            </fieldset>
 
+            <!-- Drop down menu-->
             <select name="Plan" id="plan">
                 <option value="free">Free --- $0 a month</option>
                 <option value="basic">Basic --- $9 a month</option>
                 <option value="premium">Premium --- $54 a month</option>
             </select>
+
+            <!-- Multiple choice type beat-->
+            <!-- Remember the name is the SAME for all options -->
+            <!-- name will only have ONE answer in the form -->
+            <h1>What is 9 + 10?</h1>
+            <div>
+              <input type="radio" id="A" name="answer" value="A">
+              <label for="q_A">19</label>
+            </div>
+            
+            <div>
+              <input type="radio" id="B" name="answer" value="B">
+              <label for="q_B">21</label>
+            </div>
+            
+            <div>
+              <input type="radio" id="C" name="answer" value="C">
+              <label for="q_C">You stupid</label>
+            </div>
 
             <div>
                 <textarea rows="20" cols="120">Dear haskmoney, </textarea>
